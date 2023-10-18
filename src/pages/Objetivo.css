@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*font-family: 'David Libre', serif;*/
+/*font-family: 'Alegreya SC', serif;*/
+
+main {
+    background-color: #5283b5;
+}
+
+.navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 40px;
+    width: 100%;
+    transition: all 0.5s; 
+    background-color: #5283b5;
+}
+
+.botoes {
+    display: flex;
+    gap: 2.5rem;
+    
+}
+
+.botoes button {
+    height: 50px;
+    width: 170px;
+    border: none;
+    background-color: #D67E3E;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 25px;
+    font-size: 1.5rem;
+}
+
+.botoes button img {
+    height: 20px;
+    width: 30px;
+    margin-right: .5rem;
+}
+
+.botoes button:hover {
+    background-color: #9e5a2a;
+    color: #f2f2f2;
+    transition: all .5s ;
+}
+
+
+.logo img {
+    width: 250px;
+    margin-top: 1rem;
+}
+
+.navegacao ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.navegacao ul li a{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+}
+
+.navegacao ul li a:hover{
+    color: #D67E3E;
+}
+
+.objetivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.objetivo-cima-conteudo {
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.obj-um-texto {
+    font-size: 2rem;
+    width: 490px;
+    height: 270px;
+    margin-right: 10rem;
+    line-height: 2.5rem;
+    color: #fff;
+    font-family: 'David Libre', serif;
+}
+
+.obj-dois-img {
+    position: absolute;
+    left: 0;
+    top: 49rem;
+    margin-left: 5rem;
+}
+
+.texto-dois {
+    margin-left: 35rem;
+}
+
+
+.meio {
+    margin-top: 4rem;
+}
+
+
+.objetivo-baixo-conteudo {
+    margin-top: 10rem;
+    margin-right: 55rem;
+
+}
+
+.obj-tres-texto {
+    font-size: 2rem;
+    width: 290px;
+    height: 270px;
+    margin-right: 10rem;
+    line-height: 2.5rem;
+    color: #fff;
+    font-family: 'David Libre', serif;
+}
+
+.texto-dois button {
+    margin-top: 2rem;
+    height: 55px;
+    width: 200px;
+    text-transform: uppercase;
+    font-family: 'David Libre', serif;
+    border: none;
+    background-color: #284058;
+    color: #fff;
+    font-size: 1.5rem;
+    border-radius: 25px;
+}
+
+.baixo button {
+    margin-top: 2rem;
+    height: 55px;
+    width: 200px;
+    text-transform: uppercase;
+    font-family: 'David Libre', serif;
+    border: none;
+    background-color: #D67E3E;
+    color: #284058;
+    font-size: 1.5rem;
+    border-radius: 25px;
+}
