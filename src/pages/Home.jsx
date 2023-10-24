@@ -146,11 +146,6 @@ function Home() {
                     </div>
 
                     <div className="footer-perfil">
-                        <div className="redes-sociais">
-                            <img src="../img/facebook.svg" alt="" />
-                            <img src="../img/twitter.svg" alt="" />
-                            <img src="../img/instagram.svg" alt="" />
-                        </div>
 
                         <div className="usuario">
                             <input type="name" name="name" id="name" placeholder="Nome:" />

@@ -8,12 +8,10 @@ function Treinamento() {
                <div className="vibracao">
                 <h1>1 Vibração</h1>
                     <button>
-                        <Link to={"/Home"} className="nav-link">
+                        <Link to={"/"} className="nav-link">
                             Voltar
                         </Link>
                      </button>
-
-                    <li className="nav-item"><Link to={"#equipamentos"} className="nav-link">Equipamentos</Link></li>
 
                     <div className="vibracao-conteudo">
                         <div className="img-vibracao">
@@ -25,7 +23,7 @@ function Treinamento() {
                         </div>
                     </div>
                </div>
-               <div class="atencao">
+               <div className="atencao">
                 <h1>2 Atenção</h1>
                 <div className="atencao-content">
                     <div className="text-atencao">

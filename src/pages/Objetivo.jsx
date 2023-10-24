@@ -8,23 +8,19 @@ function Objetivo() {
            <main>
             <header>
                <nav className="navegacao">
-                <a href="" className="logo"><img src="../img/logo.svg" alt="Logo" /></a>
-                <ul className="nav-menu">
-                    <li className="nav-item"><Link to={"/Home"} className="nav-link">Equipamentos</Link></li>
-                    <li className="nav-item"><Link to={"/Home"} className="nav-link">QR code</Link></li>
-                    <li className="nav-item"><Link to={"/Objetivo"} className="nav-link">Objetivos</Link></li>
-                    <li className="nav-item"><Link to={"/Adaptacao"} className="nav-link">Adaptação</Link></li>
-                </ul>
+                    <a href="" className="logo"><img src="../img/logo.svg" alt="Logo" /></a>
+                    <ul className="nav-menu">
+                        <li className="nav-item"><Link to={"/"} className="nav-link">Equipamentos</Link></li>
+                        <li className="nav-item"><Link to={"/"} className="nav-link">QR code</Link></li>
+                        <li className="nav-item"><Link to={"/objetivo"} className="nav-link">Objetivos</Link></li>
+                        <li className="nav-item"><Link to={"/treinamento"} className="nav-link">Adaptação</Link></li>
+                    </ul>
 
-                <div className="botoes">
-                    <button>
-                        <Link to={"/Home"} className="nav-link">Voltar</Link>
-                    </button>
-                </div>
-                
-                
-                
-                
+                    <div className="botoes">
+                        <button>
+                            <Link to={"/Home"} className="nav-link">Voltar</Link>
+                        </button>
+                    </div>
                 </nav> 
             </header>
                 <section className="objetivo">
@@ -57,10 +53,6 @@ function Objetivo() {
                         <button>treinamento</button>
                         
                     </div>
-
-                    
-
-                   
                 </section>
            </main>
         </>

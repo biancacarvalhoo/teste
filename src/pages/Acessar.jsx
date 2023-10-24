@@ -8,7 +8,7 @@ function Acessar(){
             <div className="login">
                 <div className="login-esquerda">
                     <div className="login-esquerda-botao">
-                        <a href=""><button><img src="../img/voltar.svg" alt="" />Voltar</button></a>
+                        <Link to={"/"}><button><img src="../img/voltar.svg" alt="" />Voltar</button></Link>
                     </div>
 
                     <div className="esquerda-conteudo">
@@ -19,7 +19,7 @@ function Acessar(){
 
                 <div className="login-direita">
                     <div className="login-direita-botao">
-                        <a href=""><button>Cadastrar</button></a>
+                        <Link to={"/cadastrar"}><button>Cadastrar</button></Link>
                     </div>
 
                     <div className="direita-conteudo">

@@ -8,7 +8,7 @@ function Cadastrar() {
                 <div className="content">
                 <div className="esquerda">
                     <div className="esquerda-botao">
-                        <a href="#"><button><img src="../img/voltar.svg" alt="" />Voltar</button></a>
+                        <Link to={"/"}><button><img src="../img/voltar.svg" alt="" />Voltar</button></Link>
                     </div>
 
                     <div className="esquerda-conteudo-c">
@@ -41,7 +41,7 @@ function Cadastrar() {
 
                 <div className="direita">
                     <div className="direita-botao">
-                        <a href="#"><button>Entrar</button></a>
+                        <Link to={"/acessar"}><button>Entrar</button></Link>
                     </div>
 
                     <div className="direita-conteudo">
