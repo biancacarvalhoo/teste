@@ -13,13 +13,10 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
 .vibracao{
     background-color: #2D455D;
-    width: 100%;
-    height: 100%;
 }
 
 
@@ -61,10 +58,9 @@ html {
 .vibracao-conteudo {
     display: flex;
     align-items: center;
-    margin-inline: 20rem;
-    margin-bottom: 1rem;
+    margin-inline: 10rem;
+    margin-block: 2rem 0rem;
 }
-
 
 
 .img-vibracao img {
@@ -80,19 +76,19 @@ html {
     line-height: 28px;
     font-size: 1.4rem;
     height: 400px;
-    padding-top: 2rem;
+    padding-top: 3rem;
     font-family: 'ABeeZee', sans-serif;
 }
 
 
 .atencao {
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: #BE7643;
 }
 .atencao h1{
     margin-left: 24rem;
-    margin-top: 2.6rem;
+    margin-top: 2.8rem;
     font-size: 3rem;
     font-family: 'Aclonica', sans-serif;
     color: #fff;
@@ -101,7 +97,7 @@ html {
 .atencao-content{
     display: flex;
     margin-inline: 20rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     justify-content: space-between;
 }
 
@@ -124,7 +120,7 @@ html {
 }
 
 .img-atencao {
-   margin-top: 1rem;
+   margin-top: 4rem;
 }
 
 
@@ -145,14 +141,13 @@ html {
     display: flex;
     align-items: center;
     margin-inline: 20rem;
-    margin-bottom: 1rem;
 }
 
 .img-associacao img {
     width: 440px;
 }
 .img-associacao{
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
 }
 
 .text-associacao {
@@ -163,8 +158,7 @@ html {
     color: #fff;
     line-height: 28px;
     font-size: 1.4rem;
-    height: 400px;
-    padding-top: 2rem;
+    height: auto;
     font-family: 'ABeeZee', sans-serif;
 }
 

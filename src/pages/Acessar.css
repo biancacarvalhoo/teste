@@ -9,28 +9,31 @@
     background-image: url(../img/entrar.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    height: 100vh;
+    height: 130vh;
 }
 
 .login {
-    position: relative;
     width: 1000px;
     height: 700px; 
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-top: 7rem;
+    margin-top: 2rem;
    
+}
+
+.login-esquerda {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .login-esquerda-botao {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: 2rem;
     margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .login-esquerda-botao button {
@@ -42,6 +45,10 @@
     font-size: 1.5rem;
     border-radius: 20px;
     font-family: 'David Libre', serif;
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .login-esquerda-botao button:hover {

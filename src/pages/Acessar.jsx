@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom"
 import "./Acessar.css"
 
+import voltar from "../img/voltar.svg"
+import usuario from "../img/usuario.svg"
+import senha from "../img/senha.svg"
+
 function Acessar(){
     return(
        <>
@@ -8,7 +12,7 @@ function Acessar(){
             <div className="login">
                 <div className="login-esquerda">
                     <div className="login-esquerda-botao">
-                        <Link to={"/"}><button><img src="../img/voltar.svg" alt="" />Voltar</button></Link>
+                        <Link to={"/"}><button><img src={voltar} alt="" />Voltar</button></Link>
                     </div>
 
                     <div className="esquerda-conteudo">
@@ -27,11 +31,11 @@ function Acessar(){
                         <div className="acesso-login">
                             <input type="name" name="name" id="name" placeholder="       Usuário"/>
                             <div className="usuario-img">
-                                <img src="../img/usuario.svg" alt="" />
+                                <img src={usuario} alt="" />
                             </div>
                             <input type="password" name="password" id="senha" placeholder="       Senha"/>
                             <div className="senha-img">
-                                <img src="../img/senha.svg" alt="" />
+                                <img src={senha} alt="" />
                             </div>
                             <button>Acessar</button>
                         </div>

@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
 import "./Treinamento.css"
 
+import voltar from "../img/voltar.svg"
+import vibracao from "../img/vibracao.svg"
+import atencao from "../img/atencao.svg"
+import associacao from "../img/associacao.svg"
+
 function Treinamento() {
     return (
         <>
@@ -8,6 +13,7 @@ function Treinamento() {
                <div className="vibracao">
                 <h1>1 Vibração</h1>
                     <button>
+                        <img src={voltar} alt="" />
                         <Link to={"/"} className="nav-link">
                             Voltar
                         </Link>
@@ -15,7 +21,7 @@ function Treinamento() {
 
                     <div className="vibracao-conteudo">
                         <div className="img-vibracao">
-                            <img src="../img/vibracao.svg" alt="" />
+                            <img src={vibracao} alt="" />
                         </div>
 
                         <div className="texto-vibracao">
@@ -32,7 +38,7 @@ function Treinamento() {
                     </div>
 
                     <div className="img-atencao">
-                        <img src="../img/atencao.svg" alt="" />
+                        <img src={atencao} alt="" />
                     </div>
                 </div>
                 </div>
@@ -42,12 +48,12 @@ function Treinamento() {
 
                     <div className="associacao-content">
                         <div className="img-associacao">
-                            <img src="../img/associacao.svg" alt="" />
+                            <img src={associacao} alt="" />
                         </div>
 
                         <div className="text-associacao">
                             <p>O cão associa a vibração aos obstáculos e passa a desviar, evitando choques e traumas.</p>
-                            <p>A adaptação varia de cão para cão,</p>
+                            <p>A adaptação varia de cão para cão.</p>
                         </div>
                     </div>
                </div>

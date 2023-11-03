@@ -15,16 +15,15 @@ html {
     text-decoration: none;
 }
 
-.navegacao{
+ .navegacao{
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding: 18px 40px;
-    width: auto;
+    justify-content: space-between;
     transition: all 0.5s;
     background-color: #5283B5;
     
 }
+
 .nav-link {
     text-decoration: none;
     color: #fff;
@@ -35,14 +34,14 @@ html {
     color: #ffff;
 }
 .navegacao img {
-    height: 360px;
-    width: 370px;
+    height: 260px;
+    width: 270px;
 }
 
 .navegacao ul {
     display: flex;
-    margin-left: 15rem;
-    gap: 5rem;
+    margin-left: 2rem;
+    gap: 3rem;
     text-decoration: none;
     
 }
@@ -54,15 +53,15 @@ html {
 }
 
 .header-botoes {
-    margin-left: 12rem;
+    margin-left: 4rem;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .header-botoes button {
     text-transform: uppercase;
     height: 50px;
-    width: 170px;
+    width: 100px;
     border: none;
     background-color: #D67E3E;
     color: #fff;
@@ -76,23 +75,23 @@ header, main {
 }
 
 .home{
-    width: 100%;
     display: flex;
     align-items: top;
     justify-content: space-between;
-    padding: 0px 10%;
 }
 
 .texto-home {
     margin-top: 7rem;
     color:  #fff;
     padding-inline: 3rem;
+    z-index: 5;
 }
 
 .img-home img {
-    height: 750px;
-    width: 700px;
+    height: 650px;
+    width: 500px;
 }
+
 .img-home {
     margin-left: 1rem;
     position: relative;
@@ -100,25 +99,20 @@ header, main {
 
 .cachorro {
     position: absolute;
-    z-index: 1;
-
+    z-index: 2;
 }
 
 .borda-cachorro {
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin-top: 11rem;
     height: 4rem;
-
-   
 }
 
 .img-home:last-child {
-    width: 780px;
-    height: 840px;
-    
+    width: 880px;
+    height: 10px;
 }
-
 
 .home h1 {
     font-size: 3rem;
@@ -169,18 +163,15 @@ header, main {
 
 .border-dog {
     position: absolute;
-    top: 0;
-    right: 0;
     transform: translate(0, -25%);
     margin-top: 17rem;
-    margin-right: 1rem;
     z-index: 1;
 
 }
 
 .borda img {
-    height: 55rem;
-    width: 77rem;
+    height: 22rem;
+    width: 25rem;
 }
 
 .equipamentos {
@@ -248,14 +239,11 @@ header, main {
 }
 
 .QR-code {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 32rem;
+    margin: auto;
 }
 
 .QR-code img {
-    width: 1700px;
+    width: 1100px;
     height: 900px;
 }
 
@@ -338,6 +326,7 @@ textarea::placeholder{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    margin-top: 1.4rem;
 }
 
 .usuario input {

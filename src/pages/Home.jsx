@@ -2,13 +2,24 @@ import { Link } from "react-router-dom"
 import "./Home.css"
 import 'boxicons/css/boxicons.min.css';
 
+import logo from "../img/logo.svg"
+import cachorroHome from "../img/cachorro-home.svg"
+import sensor from "../img/sensor.svg"
+import coleira from "../img/coleira.svg"
+import placaNano from "../img/placa-nano.svg"
+import bateria from "../img/bateria.svg"
+import cabo from "../img/cabo.svg"
+import carregador from "../img/carregador.svg"
+import video from "../img/video.svg"
+import cachorroFooter from "../img/cachorro-footer.svg"
+import footer from "../img/footer-img.svg"
 
 function Home() {
     return (
         <>
             <header>
                 <nav className="navegacao">
-                    <img src="../img/logo.svg" alt="logo" />
+                    <img src={logo} alt="logo" />
                     <ul className="nav-menu">
                         <li><a href="#equipamentos" className="nav-link">Equipamentos</a></li>
                         <li><a href="#qr-code">QR code</a></li>
@@ -34,17 +45,15 @@ function Home() {
                         <p>O avanço da tecnologia chegou até as coleiras do seu pet. Isso mesmo, hoje você já pode ajudar seu pet com coleiras inteligentes.</p>
                         </div>
                         <div className="contato-icones">
-                            <a href="" target="_blank"><i class='bx bxl-facebook'></i></a>
-                            <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
-                            <a href="" target="_blank"><i class='bx bxl-twitter'></i></a>
+                            <a href="" target="_blank"><i className='bx bxl-facebook'></i></a>
+                            <a href="" target="_blank"><i className='bx bxl-instagram'></i></a>
+                            <a href="" target="_blank"><i className='bx bxl-twitter'></i></a>
                             
                         </div>
                     </div>
                     <div className="img-home">
-                        <img src="../img/cachorro-home.svg" alt="Imagem do cachorro" className="cachorro dog" />
-                        <div className="borda">
-                        <img src="../img/borda-home.svg" alt="Borda da imagem do cachorro" className="border-dog" width="900" height="1000" />
-                        </div>
+                        <img src={cachorroHome} alt="Imagem do cachorro" className="cachorro dog" />
+                        
                     </div>
                 </section>
 
@@ -54,7 +63,7 @@ function Home() {
                     <div className="equipamentos-conteudo">
                         <div className="containers">
                             <div className="background-equipamentos">
-                                <img src="../img/sensor.svg" alt="Imagem do sensor" />
+                                <img src={sensor} alt="Imagem do sensor" />
                             </div>
                             <div className="texto-equipamentos">
                                 <p>Sensor ultrassônico</p>
@@ -65,7 +74,7 @@ function Home() {
 
                         <div className="containers">
                             <div className="background-equipamentos">
-                                <img src="../img/coleira.svg" alt="Imagem da coleira" />
+                                <img src={coleira} alt="Imagem da coleira" />
                             </div>
                             <div className="texto-equipamentos">
                                 <p>Coleira com QR Code</p>
@@ -76,7 +85,7 @@ function Home() {
 
                         <div className="containers">
                             <div className="background-equipamentos">
-                                <img src="../img/placa-nano.svg" alt="Imagem da placa nano" />
+                                <img src={placaNano} alt="Imagem da placa nano" />
                             </div>
                             <div className="texto-equipamentos">
                                 <p>Placa Nano</p>
@@ -88,7 +97,7 @@ function Home() {
 
                         <div className="containers">
                             <div className="background-equipamentos">
-                                <img src="../img/bateria.svg" alt="Imagem da bateria" />
+                                <img src={bateria} alt="Imagem da bateria" />
                             </div>
                             <div className="texto-equipamentos">
                                 <p>Bateria 9v</p>
@@ -98,7 +107,7 @@ function Home() {
                         </div>
                         <div className="containers">
                             <div className="background-equipamentos">
-                                <img src="../img/cabo.svg" alt="Imagem do cabo" />
+                                <img src={cabo} alt="Imagem do cabo" />
                             </div>
                             <div className="texto-equipamentos">
                                 <p>Cabo USB 2.0</p>
@@ -108,7 +117,7 @@ function Home() {
                         </div>
                         <div className="containers">
                             <div className="background-equipamentos">
-                                <img src="../img/carregador.svg" alt="Imagem do carregador" />
+                                <img src={carregador} alt="Imagem do carregador" />
                             </div>
                             <div className="texto-equipamentos">
                                 <p>Carregador de bateria</p>
@@ -117,31 +126,24 @@ function Home() {
                         </div>
 
                         <section className="QR-code" id="qr-code">
-                           <img src="../img/video.svg" alt="" />
+                           <img src={video} alt="" />
 
                         </section>
                     </div>
-
-
-
-
                 </div>
-
-    
-
             </main>
 
             <footer>
                 <div className="footer-cima">
                     <div className="footer-img">
-                        <img src="../img/cachorro-footer.svg" alt="Imagem cachorro cartoon" />
+                        <img src={cachorroFooter} alt="Imagem cachorro cartoon" />
                     </div>
 
                     <div className="footer-textarea">
                         <h4>Deixe seu comentário!</h4>
                         <textarea name="" id="mensagem" cols="35" rows="10" placeholder="Digite aqui..." required></textarea>
                         <div className="enviar">
-                            <button type="submit" data-button class="enviar" required>Enviar</button>
+                            <button type="submit" data-button className="enviar" required>Enviar</button>
                         </div>
                     </div>
 
@@ -150,7 +152,7 @@ function Home() {
                         <div className="usuario">
                             <input type="name" name="name" id="name" placeholder="Nome:" />
                             <input type="email" name="email" placeholder="Email:" />
-                            <button><img src="../img/footer-img.svg" alt="" />Contact us</button>
+                            <button><img src={footer} alt="" />Contact us</button>
 
                         </div>
                     </div>
@@ -158,13 +160,13 @@ function Home() {
 
                 <div className="footer-baixo">
                     <p>Declaração de privacidade</p>
-                    <span>I</span>
+                    <span>|</span>
                     <p>Termos legais de uso</p>
-                    <span>I</span>
+                    <span>|</span>
                     <p>Opção de anúncio</p>
-                    <span>I</span>
+                    <span>|</span>
                     <p>Acessibilidade</p>
-                    <span>I</span>
+                    <span>|</span>
                     <p>Configuração de cookies</p> 
                 </div>
             </footer>

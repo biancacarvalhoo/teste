@@ -90,7 +90,8 @@ main {
     font-size: 2rem;
     width: 490px;
     height: 270px;
-    margin-right: 10rem;
+    margin-right: 7dvb;
+    margin-top: 7dvb;
     line-height: 2.5rem;
     color: #fff;
     font-family: 'David Libre', serif;
@@ -104,7 +105,8 @@ main {
 }
 
 .texto-dois {
-    margin-left: 35rem;
+    margin-left: 47rem;
+    margin-top: 4rem;
 }
 
 
@@ -114,8 +116,8 @@ main {
 
 
 .objetivo-baixo-conteudo {
-    margin-top: 10rem;
-    margin-right: 55rem;
+    margin-top: 20rem;
+    margin-right: 13rem;
     margin-bottom: 12rem;
 }
 

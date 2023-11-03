@@ -2,13 +2,18 @@
 import "./Objetivo.css"
 import { Link } from "react-router-dom"
 
+import voltar from "../img/voltar.svg"
+import logo from "../img/logo.svg"
+import obj1 from "../img/obj1.svg"
+import obj2 from "../img/obj2.svg"
+
 function Objetivo() {
     return (
         <>
            <main>
             <header>
                <nav className="navegacao">
-                    <a href="" className="logo"><img src="../img/logo.svg" alt="Logo" /></a>
+                    <a href="" className="logo"><img src={logo} alt="Logo" /></a>
                     <ul className="nav-menu">
                         <li className="nav-item"><Link to={"/"} className="nav-link">Equipamentos</Link></li>
                         <li className="nav-item"><Link to={"/"} className="nav-link">QR code</Link></li>
@@ -18,7 +23,10 @@ function Objetivo() {
 
                     <div className="botoes">
                         <button>
-                            <Link to={"/Home"} className="nav-link">Voltar</Link>
+                            <Link to={"/"} className="nav-link">
+                                <img src={voltar} alt="" />    
+                                Voltar
+                            </Link>
                         </button>
                     </div>
                 </nav> 
@@ -29,13 +37,13 @@ function Objetivo() {
                             <p> Programada por sistema arduino a Animal Collar tem como objetivo principal auxiliar na vida cotidiana de cachorros com deficiência visual e seus nossos, ultilizando leves vibrações que vão auxiliar o cão para não se chocar contra obstáculos</p>
                         </div>
                         <div className="obj-um-img">
-                            <img src="../img/obj1.svg" alt="" />
+                            <img src={obj1} alt="" />
                         </div>
                     </div>
 
                     <div className="objetivo-cima-conteudo meio">
                     <div className="obj-dois-img ">
-                            <img src="../img/obj2.svg" alt="" />
+                            <img src={obj2} alt="" />
                         </div>
 
                         <div className="obj-um-texto texto-dois">
@@ -47,7 +55,7 @@ function Objetivo() {
 
                     <div className="objetivo-baixo-conteudo baixo">
                         <div className="obj-tres-texto">
-                            <p>para melhor experiência com nosso equipamento aconselhamos que se animal passe por um simples treinamento de três etapas</p>
+                            <p>Para melhor experiência com nosso equipamento aconselhamos que se animal passe por um simples treinamento de três etapas</p>
                         </div>
 
                         <button>treinamento</button>

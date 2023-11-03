@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom"
 import "./Cadastrar.css"
 
+import voltar from "../img/voltar.svg"
+import email from "../img/email.svg"
+import usuario from "../img/usuario.svg"
+import telefone from "../img/telefone.svg"
+import senha from "../img/senha.svg"
+import cep from "../img/cep.svg"
+import nomeCachorro from "../img/nome-cachorro.svg"
+import raca from "../img/raca.svg"
+import idade from "../img/idade.svg"
+
 function Cadastrar() {
     return (
         <>
@@ -8,7 +18,7 @@ function Cadastrar() {
                 <div className="content">
                 <div className="esquerda">
                     <div className="esquerda-botao">
-                        <Link to={"/"}><button><img src="../img/voltar.svg" alt="" />Voltar</button></Link>
+                        <Link to={"/"}><button><img src={voltar} alt="" />Voltar</button></Link>
                     </div>
 
                     <div className="esquerda-conteudo-c">
@@ -16,24 +26,24 @@ function Cadastrar() {
                         <div className="inputs-dono">
                             <div className="email">
                                 <input type="email" placeholder="       Email" />
-                                <img src="../img/email.svg" alt="" />
+                                <img src={email} alt="" />
                             </div>
                             <div className="user">
                                 <input type="text" placeholder="      Usuário"/>
-                                <img src="../img/usuario.svg" alt="" />
+                                <img src={usuario} alt="" />
                             </div>
 
                             <div className="telefone">
                                 <input type="tel" placeholder="      Telefone"/>
-                                <img src="../img/telefone.svg" alt="" />
+                                <img src={telefone} alt="" />
                             </div>
                             <div className="senha">
                                 <input type="password" placeholder="       Senha"/>
-                                <img src="../img/senha.svg" alt="" />
+                                <img src={senha} alt="" />
                             </div>
                            <div className="cep">
                                 <input type="text" placeholder="       CEP"/>
-                                <img src="../img/cep.svg" alt="" />
+                                <img src={cep} alt="" />
                            </div>
                         </div>
                     </div>
@@ -49,20 +59,20 @@ function Cadastrar() {
                         <div className="inputs-cachorro">
                             <div className="nome-cachorro">
                                 <input type="email" placeholder="        Nome do cachorro" />
-                                <img src="../img/nome-cachorro.svg" alt="" />
+                                <img src={nomeCachorro} alt="" />
                             </div>
                             <div className="dono">
                                 <input type="text" placeholder="        Nome do dono"/>
-                                <img src="../img/usuario.svg" alt="" />
+                                <img src={usuario} alt="" />
                             </div>
 
                             <div className="raca">
                                 <input type="tel" placeholder="        Raça"/>
-                                <img src="../img/raca.svg" alt="" />
+                                <img src={raca} alt="" />
                             </div>
                             <div className="idade">
                                 <input type="password" placeholder="        Idade"/>
-                                <img src="../img/idade.svg" alt="" />
+                                <img src={idade} alt="" />
                             </div>
                           
                         </div>
