@@ -13,7 +13,9 @@ function Objetivo() {
            <main>
             <header>
                <nav className="navegacao">
-                    <a href="" className="logo"><img src={logo} alt="Logo" /></a>
+                    <Link to={"/"} >
+                        <img src={logo} alt="Logo" className="logo"/>
+                    </Link>
                     <ul className="nav-menu">
                         <li className="nav-item"><Link to={"/"} className="nav-link">Equipamentos</Link></li>
                         <li className="nav-item"><Link to={"/"} className="nav-link">QR code</Link></li>
