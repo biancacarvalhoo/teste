@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
 
@@ -5,154 +6,299 @@ html {
     scroll-behavior: smooth;
 }
 
-/*font-family: 'David Libre', serif;*/
-/*font-family: 'Alegreya SC', serif;*/
-
-main {
-    background-color: #5283b5;
+#webObjetivo {
+    display: none;
 }
 
-.navegacao{
+.MobileObjetivo {
+    background: #5283B5;
+    height: 145vh;
+}
+
+.MobileObjetivoHeader {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
-    padding: 18px 40px;
-    width: 100%;
-    transition: all 0.5s; 
-    background-color: #5283b5;
+    gap: 20px;
+    padding-inline: 15px;
+    margin-bottom: 42px;
+    padding-top: 20px;
 }
 
-.botoes {
+.logoMobile {
+    margin-left: -15px;
+}
+
+.MobileObjetivoHeader nav {
     display: flex;
-    gap: 2.5rem;
-    
+    gap: 15px;
+    align-items: center;
+    margin-left: -10px;
+    height: 2rem;
 }
 
-.botoes button {
-    height: 50px;
-    width: 170px;
+.MobileObjetivoHeader nav a {
+    font-size: 15px;
+    color: #fff;
+    font-family: 'David Libre', serif;
+    text-decoration: none;
+    height: 2rem;
+    line-height: 2rem;
+    position: relative;
+}
+
+.active {
+    height: 2px;
+    background: #fff;
+    width: 40%;
+    margin: auto;
+}
+
+.buttonM-O button {
+    background: #D67E3E;
     border: none;
-    background-color: #D67E3E;
+    border-radius: 50px;
+    padding: 5px 10px;
     color: #fff;
-    font-size: 1rem;
-    border-radius: 25px;
-    font-size: 1.5rem;
-}
-
-.botoes button img {
-    height: 20px;
-    width: 30px;
-    margin-right: .5rem;
-}
-
-.botoes button:hover {
-    background-color: #9e5a2a;
-    color: #f2f2f2;
-    transition: all .5s ;
-}
-
-
-.logo img {
-    width: 250px;
-    margin-top: 1rem;
-}
-
-.navegacao ul{
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 5rem;
+    text-align: center;
+    gap: 5px;
 }
-.navegacao ul li a{
+
+.buttonM-O img {
+    height: 16px;
+    width: 16px;    
+}
+
+.firstM {
     color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all 0.5s;
-    font-size: 1.2rem;
+    width: 220px;
+    margin-left: 41px;
 }
 
-.navegacao ul li a:hover{
-    color: #D67E3E;
+.firstImg {
+    float: right;
+    margin-top: -25px;
+    margin-right: 5px;
 }
 
-.objetivo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.objetivo-cima-conteudo {
-    display: flex;
-    flex-direction: row;
+.secondM {
+    margin-top: 200px;
+    position: relative;
     z-index: 1;
 }
 
-.obj-um-texto {
-    font-size: 2rem;
-    width: 490px;
-    height: 270px;
-    margin-right: 7dvb;
-    margin-top: 7dvb;
-    line-height: 2.5rem;
-    color: #fff;
-    font-family: 'David Libre', serif;
-}
-
-.obj-dois-img {
-    position: absolute;
-    left: 0;
-    top: 49rem;
-    margin-left: 5rem;
-}
-
-.texto-dois {
-    margin-left: 47rem;
-    margin-top: 4rem;
-}
-
-
-.meio {
-    margin-top: 4rem;
-}
-
-
-.objetivo-baixo-conteudo {
-    margin-top: 20rem;
-    margin-right: 13rem;
-    margin-bottom: 12rem;
-}
-
-.obj-tres-texto {
-    font-size: 2rem;
-    width: 290px;
-    height: 270px;
-    margin-right: 10rem;
-    line-height: 2.5rem;
-    color: #fff;
-    font-family: 'David Libre', serif;
-}
-
-.texto-dois button {
-    margin-top: 2rem;
-    height: 55px;
-    width: 200px;
-    text-transform: uppercase;
-    font-family: 'David Libre', serif;
-    border: none;
-    background-color: #284058;
-    color: #fff;
-    font-size: 1.5rem;
-    border-radius: 25px;
-}
-
-.baixo button {
-    margin-top: 2rem;
-    height: 55px;
-    width: 200px;
-    text-transform: uppercase;
-    font-family: 'David Libre', serif;
-    border: none;
-    background-color: #D67E3E;
+.secondM {
+    width: 150px;
+    margin-left: 80px;
+    z-index: 2;
     color: #284058;
-    font-size: 1.5rem;
-    border-radius: 25px;
+
+}
+
+.secondIMG {
+    margin-top: -240px;
+    margin-left: 0px;
+    position: absolute;
+}
+
+.secondBt {
+    background: #D67E3E;
+    color: #284058;
+    float: right;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.thirdM {
+    margin-top: 100px;
+    display: flex;
+    color: #fff;
+    gap: 35px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.thirdM p {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 239px;
+    
+}
+
+.thirdM button {
+    background: #284058;
+    color: #ffff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+}
+
+.BibliografiaM {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1440px) {
+    .MobileObjetivo {
+        display: none;
+    }
+
+    #webObjetivo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navegacao{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 18px 40px;
+        width: 100%;
+        transition: all 0.5s; 
+        background-color: #5283b5;
+    }
+    
+    .botoes {
+        display: flex;
+        gap: 2.5rem;
+        
+    }
+    
+    .botoes button {
+        height: 50px;
+        width: 170px;
+        border: none;
+        background-color: #D67E3E;
+        color: #fff;
+        font-size: 1rem;
+        border-radius: 25px;
+        font-size: 1.5rem;
+    }
+    
+    .botoes button img {
+        height: 20px;
+        width: 30px;
+        margin-right: .5rem;
+    }
+    
+    .botoes button:hover {
+        background-color: #9e5a2a;
+        color: #f2f2f2;
+        transition: all .5s ;
+    }
+    
+    
+    .logo img {
+        width: 250px;
+        margin-top: 1rem;
+    }
+    
+    .navegacao ul{
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    .navegacao ul li a{
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        transition: all 0.5s;
+        font-size: 1.2rem;
+    }
+    
+    .navegacao ul li a:hover{
+        color: #D67E3E;
+    }
+    
+    .objetivo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .objetivo-cima-conteudo {
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+    }
+    
+    .obj-um-texto {
+        font-size: 2rem;
+        width: 490px;
+        height: 270px;
+        margin-right: 7dvb;
+        margin-top: 7dvb;
+        line-height: 2.5rem;
+        color: #fff;
+        font-family: 'David Libre', serif;
+    }
+    
+    .obj-dois-img {
+        position: absolute;
+        left: 0;
+        top: 49rem;
+        margin-left: 5rem;
+    }
+    
+    .texto-dois {
+        margin-left: 47rem;
+        margin-top: 4rem;
+    }
+    
+    
+    .meio {
+        margin-top: 4rem;
+    }
+    
+    
+    .objetivo-baixo-conteudo {
+        margin-top: 20rem;
+        margin-right: 13rem;
+        margin-bottom: 12rem;
+    }
+    
+    .obj-tres-texto {
+        font-size: 2rem;
+        width: 290px;
+        height: 270px;
+        margin-right: 10rem;
+        line-height: 2.5rem;
+        color: #fff;
+        font-family: 'David Libre', serif;
+    }
+    
+    .texto-dois button {
+        margin-top: 2rem;
+        height: 55px;
+        width: 200px;
+        text-transform: uppercase;
+        font-family: 'David Libre', serif;
+        border: none;
+        background-color: #284058;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 25px;
+    }
+    
+    .baixo button {
+        margin-top: 2rem;
+        height: 55px;
+        width: 200px;
+        text-transform: uppercase;
+        font-family: 'David Libre', serif;
+        border: none;
+        background-color: #D67E3E;
+        color: #284058;
+        font-size: 1.5rem;
+        border-radius: 25px;
+    }
 }

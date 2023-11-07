@@ -1,268 +1,377 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=David+Libre:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 
-.cadastrar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/bk-cadastrar.svg);
+.cadastrar-web {
+    display: none;
+}
+
+.mobileCadastrar {
+    background-image: url(../img/mobile/cadastroBG.svg);
     background-size: cover;
-    height: 140vh;
-}
+    height: 100vh;
 
-.content {
-    position: relative;
-    width: 1080px;
-    height: 750px; 
     display: flex;
     align-items: center;
-    justify-content: center; 
-    margin-top: 5rem;
+    justify-content: center;
 }
 
-.esquerda-botao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 2rem;
-    margin-left: 3.7rem;
-    
+.contentC {
+    background: rgba(82, 131, 181, 0.6);
+    width: 288px;
+    border-radius: 30px;
 }
 
-.esquerda-botao button {
-    height: 40px;
-    width: 130px;
+.buttonBack button {
+    width: 95px;
+    height: 28px;
+    padding: 2px 9px;
     border: none;
     background-color: #D67E3E;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 18px;
     border-radius: 20px;
     font-family: 'David Libre', serif;
     display: flex;
+    gap: 5px;
     justify-content: center;
     align-items: center;
-    gap: 0.4rem;
-}
-
-.esquerda-botao button:hover {
-    background-color: #9e5a2a;
-    color: #f2f2f2;
-    transition: all .5s ;
-}
-
-.esquerda-botao button img  {
-    height: 20px;
-    width: 30px;
-}
-
-.esquerda {
-    flex: 1;
-    background: rgba(82, 131, 181, 0.89);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px 0 0 30px;
-    z-index: 1;
-}
-.inputs-dono {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.inputs-dono input {
-    height: 55px;
-    width: 20rem;
-    border: solid 2px #fff;
-    background-color: transparent;
-    border-radius: 30px;
-    position: relative;
-}
-
-.esquerda-conteudo-c h1 {
-    font-size: 2.5rem;
-    color: #fff;
-    font-family: 'Alegreya SC', serif;
-    font-weight: 400;
-    text-transform: uppercase;
     text-align: center;
 }
 
-
-.direita-botao {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: .01rem;
-    margin-right: 2rem;
+.formC {
+    padding: 22px 24px 22px 24px;
 }
 
-.direita-botao button {
-    height: 40px;
-    width: 135px;
-    border: none;
-    background-color: #D67E3E;
+.buttonBack img {
+    height: 19px;
+    width: 19px
+}
+
+.contentC h1 {
+    font-size: 40px;
     color: #fff;
-    font-size: 1.5rem;
-    border-radius: 20px;
-    font-family: 'David Libre', serif;
-}
-
-
-.direita{
-    flex: 1.5;
-    height: 100%;
-    background: rgba(82, 131, 181, 0.60);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 30px 30px 0;
-    position: relative;
-}
-
-.direita-botao button:hover {
-    background-color: #9e5a2a;
-    color: #f2f2f2;
-    transition: all .5s ;
-}
-
-.direita button {
-    height: 40px;
-    width: 165px;
-    border: none;
-    background-color: #D67E3E;
-    color: #fff;
-    font-size: 1.8rem;
-    border-radius: 20px;
-    font-family: 'David Libre';
-    margin-top: 2rem;
-    z-index: 2;
-
-}
-
-.direita button:hover {
-    background-color: #9e5a2a;
-    color: #f2f2f2;
-    transition: all .5s;
-}
-
-.direita-conteudo h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 3px;
     font-family: 'Alegreya SC', serif;
     font-weight: 400;
-    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 12px
 }
 
-
-
-.email img {
-    position: absolute;
-    left: 0;
-    margin-left: 4.5rem;
-    margin-top: 1rem;
-    
-}
-
-.user img {
-    height: 35px;
-    width: 40px;
-    position: absolute;
-    left: 0;
-    margin-left: 4rem;
-    margin-top: .5rem;
-}
-
-.telefone img {
-    height: 35px;
-    width: 40px;
-    position: absolute;
-    left: 0;
-    margin-left: 4rem;
-    margin-top: .6rem;
-}
-
-.senha img {
-    height: 35px;
-    width: 40px;
-    position: absolute;
-    left: 0;
-    margin-left: 4rem;
-    margin-top: .6rem;
-}
-
-.cep img {
-    position: absolute;
-    left: 0;
-    margin-left: 4rem;
-    margin-top: .6rem;
-}
-
-
-.inputs-dono, input::placeholder{
-    padding-top: .5rem;
-    color: #fff;
-    font-family: 'David Libre', serif;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    text-align: left;
-}
-
-.inputs-cachorro {
+.inputs-cadastro {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;  
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
 }
 
-.inputs-cachorro input {
-    height: 55px;
-    width: 23rem;
-    border: solid 2px #fff;
-    background-color: transparent;
-    border-radius: 30px;
-    position: relative;
+.next button {
+    float: right;
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-bottom: 13px; 
+    margin-right: 23px; 
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
 
-.nome-cachorro img {
-    position: absolute;
-    left: 0;
-    margin-left: 10rem;
-    margin-top: .5rem;
+.buttons button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.sendCadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.sendCadastro button {
+    width: 95px;
+    height: 28px;
+    padding: 2px 9px;
+    border: none;
+    background-color: #D67E3E;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    font-family: 'David Libre', serif;
+}
+
+@media (min-width: 1340px) {
+    .mobileCadastrar {
+        display: none;
+    }
+
+    .cadastrar-web {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/bk-cadastrar.svg);
+        background-size: cover;
+        height: 130vh;
+    }
     
+    .contentW {
+        position: relative;
+        width: 1080px;
+        height: 750px; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin-top: 5rem;
+    }
+    
+    .esquerda-botao {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 2rem;
+        margin-left: 3.7rem;
+        
+    }
+    
+    .esquerda-botao button {
+        height: 40px;
+        width: 130px;
+        border: none;
+        background-color: #D67E3E;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        font-family: 'David Libre', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    
+    .esquerda-botao button:hover {
+        background-color: #9e5a2a;
+        color: #f2f2f2;
+        transition: all .5s ;
+    }
+    
+    .esquerda-botao button img  {
+        height: 20px;
+        width: 30px;
+    }
+    
+    .esquerda {
+        flex: 1;
+        background: rgba(82, 131, 181, 0.89);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px 0 0 30px;
+        z-index: 1;
+    }
+    .inputs-dono {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .inputs-dono input {
+        height: 55px;
+        width: 20rem;
+        border: solid 2px #fff;
+        background-color: transparent;
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    .esquerda-conteudo-c h1 {
+        font-size: 2.5rem;
+        color: #fff;
+        font-family: 'Alegreya SC', serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    
+    .direita-botao {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: .01rem;
+        margin-right: 2rem;
+    }
+    
+    .direita-botao button {
+        height: 40px;
+        width: 135px;
+        border: none;
+        background-color: #D67E3E;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        font-family: 'David Libre', serif;
+    }
+    
+    
+    .direita{
+        flex: 1.5;
+        height: 100%;
+        background: rgba(82, 131, 181, 0.60);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 30px 30px 0;
+        position: relative;
+    }
+    
+    .direita-botao button:hover {
+        background-color: #9e5a2a;
+        color: #f2f2f2;
+        transition: all .5s ;
+    }
+    
+    .direita button {
+        height: 40px;
+        width: 165px;
+        border: none;
+        background-color: #D67E3E;
+        color: #fff;
+        font-size: 1.8rem;
+        border-radius: 20px;
+        font-family: 'David Libre';
+        margin-top: 2rem;
+        z-index: 2;
+    
+    }
+    
+    .direita button:hover {
+        background-color: #9e5a2a;
+        color: #f2f2f2;
+        transition: all .5s;
+    }
+    
+    .direita-conteudo h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 3px;
+        font-family: 'Alegreya SC', serif;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    
+    
+    .email img {
+        position: absolute;
+        left: 0;
+        margin-left: 4.5rem;
+        margin-top: 1rem;
+        
+    }
+    
+    .user img {
+        height: 35px;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        margin-left: 4rem;
+        margin-top: .5rem;
+    }
+    
+    .telefone img {
+        height: 35px;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        margin-left: 4rem;
+        margin-top: .6rem;
+    }
+    
+    .senha img {
+        height: 35px;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        margin-left: 4rem;
+        margin-top: .6rem;
+    }
+    
+    .cep img {
+        position: absolute;
+        left: 0;
+        margin-left: 4rem;
+        margin-top: .6rem;
+    }
+    
+    
+    .inputs-dono, input::placeholder{
+        padding-top: .5rem;
+        color: #fff;
+        font-family: 'David Libre', serif;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .inputs-cachorro {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;  
+    }
+    
+    .inputs-cachorro input {
+        height: 55px;
+        width: 23rem;
+        border: solid 2px #fff;
+        background-color: transparent;
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    
+    .nome-cachorro img {
+        position: absolute;
+        left: 0;
+        margin-left: 10rem;
+        margin-top: .5rem;
+        
+    }
+    
+    .dono img {
+        position: absolute;
+        left: 0;
+        margin-left: 10rem;
+        margin-top: .5rem;
+    }
+    
+    .raca img {
+        height: 35px;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        margin-left: 10rem;
+        margin-top: .6rem;
+    }
+    
+    .idade img {
+        height: 35px;
+        width: 40px;
+        position: absolute;
+        left: 0;
+        margin-left: 10rem;
+        margin-top: .6rem;
+    }
 }
-
-.dono img {
-    position: absolute;
-    left: 0;
-    margin-left: 10rem;
-    margin-top: .5rem;
-}
-
-.raca img {
-    height: 35px;
-    width: 40px;
-    position: absolute;
-    left: 0;
-    margin-left: 10rem;
-    margin-top: .6rem;
-}
-
-.idade img {
-    height: 35px;
-    width: 40px;
-    position: absolute;
-    left: 0;
-    margin-left: 10rem;
-    margin-top: .6rem;
-}
-
-

@@ -8,7 +8,47 @@ import senha from "../img/senha.svg"
 function Acessar(){
     return(
        <>
-       <section className="acessar">
+        <section className="mobile">
+            <div className="buttonBack">
+                <Link to={"/"}> 
+                    <button>
+                        <img src={voltar} alt="" />
+                        Voltar
+                    </button>
+                </Link>
+            </div>
+            <div className="content">
+                <div className="form">
+                    <Link to={"/cadastrar"}> 
+                        <button className="cadastrar">
+                            Cadastrar
+                        </button>
+                    </Link>
+                    
+                    <div className="infos">
+                        <h1>Bem-vindo</h1>
+                        <p>Acessar</p>
+                    </div>
+
+                    <div className="inputs">
+                        <div className="input">
+                            <img src={usuario} alt="" />
+                            <input type="text" placeholder="Usuario" />
+                        </div>
+                        <div className="input">
+                            <img src={senha} alt="" />
+                            <input type="password" placeholder="Senha" />
+                        </div>
+                    </div>
+                    <div className="acessar">
+                        <button>Acessar</button>    
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+       <section className="acessar-web">
             <div className="login">
                 <div className="login-esquerda">
                     <div className="login-esquerda-botao">

@@ -1,202 +1,344 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
 
-.acessar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.acessar-web {
+    display: none;
+}
 
-    background-image: url(../img/entrar.png);
-    background-repeat: no-repeat;
+.mobile {
+    background-image: url(../img/mobile/acessoBG.svg);
     background-size: cover;
-    height: 130vh;
+    height: 100vh
 }
 
-.login {
-    width: 1000px;
-    height: 700px; 
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    margin-top: 2rem;
-   
+.buttonBack {
+    margin-block: 22px 35px;
+    margin-left: 12px;
 }
 
-.login-esquerda {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.login-esquerda-botao {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 2rem;
-    margin-top: 2rem;
-}
-
-.login-esquerda-botao button {
-    height: 40px;
-    width: 130px;
+.buttonBack button {
+    width: 95px;
+    height: 28px;
+    padding: 2px 9px;
     border: none;
     background-color: #D67E3E;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 18px;
     border-radius: 20px;
     font-family: 'David Libre', serif;
     display: flex;
-    gap: 0.3rem;
+    gap: 5px;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.login-esquerda-botao button:hover {
-    background-color: #9e5a2a;
-    color: #f2f2f2;
-    transition: all .5s ;
+.buttonBack img {
+    height: 19px;
+    width: 19px;
 }
 
-.login-esquerda-botao button img {
-    height: 20px;
-    width: 30px;
+.content {
+    background: rgba(82, 131, 181, 0.6);
+    width: 288px;
+    margin: auto;
+    
+    border-radius: 30px;
 }
 
-.login-esquerda {
-    flex: 1;
-    background: rgba(82, 131, 181, 0.89);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px 0 0 30px; 
+.form {
+    padding: 22px 24px 71px 24px;
 }
 
-.esquerda-conteudo h1{
-    font-size: 4rem;
+.cadastrar {
+    height: 31px;
+    width: 79px;
+    border: none;
+    background-color: #D67E3E;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px;
+    font-family: 'David Libre', serif;
+    float: right;
+}
+
+.infos {
+    margin-top: 65px;
+    text-align: center;
+}
+.infos h1 {
+    font-size: 48px;
     color: #fff;
     font-family: 'Alegreya SC', serif;
     font-weight: 800;
-}
 
-.esquerda-conteudo p {
-    font-size: 1.5rem;
+}
+.infos p {
+    font-size: 40px;
     text-align: center;
-    color: rgb(255, 255, 255, 0.70);
-    margin-top: 1rem;
-    font-family: 'David Libre', serif;
-}
-
-.login-direita-botao {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
-
-.login-direita-botao button {
-    height: 40px;
-    width: 135px;
-    border: none;
-    background-color: #D67E3E;
     color: #fff;
-    font-size: 1.5rem;
-    border-radius: 20px;
+    margin-block: 0.7rem 0.6rem;
     font-family: 'David Libre', serif;
 }
 
-.login-direita-botao button:hover {
-    background-color: #9e5a2a;
-    color: #f2f2f2;
-    transition: all .5s ;
-}
-
-.login-direita {
-    flex: 1.5;
-    height: 100%;
-    background: rgba(82, 131, 181, 0.60);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 30px 30px 0;
-    position: relative; 
-}
-
-.acesso-login {
+.inputs {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
+    margin-bottom: 39px;
 }
 
-.direita-conteudo h1{
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
+.input {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    padding: 7px 0 5px 9px;
+    display: flex;
+    gap: 0.3rem
+}
+
+.input img {
+    width: 20px;
+    height: 20px;
+}
+.input input {
+    background: transparent;
+    border: none;
     color: #fff;
-    letter-spacing: 3px;
-    font-family: 'Alegreya SC', serif;
-    font-weight: 400;
+    font-size: 20px;
+    width: 80%;
+    outline: none;
 }
-
-.acesso-login input {
-    height: 55px;
-    width: 25rem;
-    border: solid 2px #fff;
-    background-color: transparent;
-    border-radius: 30px;
-    position: relative;
-}
-
-.usuario-img img {
-    height: 35px;
-    width: 40px;
-}
-
-.usuario-img {
-    position: absolute;
-    left: 0;
-    margin-left: 7rem;
-    margin-top: .41rem;
-}
-
-.senha-img img {
-    height: 40px;
-    width: 40px;
-}
-
-
-
-.senha-img {
-    position: absolute;
-    left: 0;
-    margin-left: 7rem;
-    margin-top: 5.28rem;
-}
-
-.acesso-login input::placeholder{
+.input input::placeholder {
     color: #fff;
-    font-family: 'David Libre', serif;
-    letter-spacing: 1px;
-    font-size: 2rem;
-    text-align: left;
 }
 
-.direita-conteudo button {
-    height: 40px;
-    width: 135px;
+.acessar {
+    display: flex;
+    justify-content: center;
+}
+
+.acessar button{
+    height: 45px;
+    width: 142px;
     border: none;
     background-color: #D67E3E;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 24px;
     border-radius: 20px;
     font-family: 'Alegreya SC', serif;
 }
 
-.direita-conteudo button:hover {
-    background-color: #9e5a2a;
-    color: #f2f2f2;
-    transition: all .5s ;
+@media (min-width: 1440px) {
+    .mobile {
+        display: none;
+    }
+
+    .login-esquerda-botao {
+        display: flex;
+    }
+    .esquerda-botao {
+        display: none;
+    }
+
+    .acessar-web {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     
+        background-image: url(../img/entrar.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 130vh;
+    }
+    
+    .login {
+        width: 1000px;
+        height: 700px; 
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin-top: 2rem;
+
+        flex-direction: row;
+    }
+    
+    .login-esquerda {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .login-esquerda-botao {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .login-esquerda-botao button {
+        height: 40px;
+        width: 130px;
+        border: none;
+        background-color: #D67E3E;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        font-family: 'David Libre', serif;
+        display: flex;
+        gap: 0.3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .login-esquerda-botao button:hover {
+        background-color: #9e5a2a;
+        color: #f2f2f2;
+        transition: all .5s ;
+    }
+    
+    .login-esquerda-botao button img {
+        height: 20px;
+        width: 30px;
+    }
+    
+    .login-esquerda {
+        flex: 1;
+        background: rgba(82, 131, 181, 0.89);
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px 0 0 30px; 
+    }
+    
+    .esquerda-conteudo h1{
+        font-size: 4rem;
+        color: #fff;
+        font-family: 'Alegreya SC', serif;
+        font-weight: 800;
+    }
+    
+    .esquerda-conteudo p {
+        font-size: 1.5rem;
+        text-align: center;
+        color: rgb(255, 255, 255, 0.70);
+        margin-top: 1rem;
+        font-family: 'David Libre', serif;
+    }
+    
+    .login-direita-botao {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .login-direita-botao button {
+        height: 40px;
+        width: 135px;
+        border: none;
+        background-color: #D67E3E;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        font-family: 'David Libre', serif;
+    }
+    
+    .login-direita-botao button:hover {
+        background-color: #9e5a2a;
+        color: #f2f2f2;
+        transition: all .5s ;
+    }
+    
+    .login-direita {
+        flex: 1.5;
+        height: 100%;
+        background: rgba(82, 131, 181, 0.60);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0 30px 30px 0;
+        position: relative; 
+    }
+    
+    .acesso-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .direita-conteudo h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 3px;
+        font-family: 'Alegreya SC', serif;
+        font-weight: 400;
+    }
+    
+    .acesso-login input {
+        height: 55px;
+        width: 25rem;
+        border: solid 2px #fff;
+        background-color: transparent;
+        border-radius: 30px;
+        position: relative;
+    }
+    
+    .usuario-img img {
+        height: 35px;
+        width: 40px;
+    }
+    
+    .usuario-img {
+        position: absolute;
+        left: 0;
+        margin-left: 7rem;
+        margin-top: .41rem;
+    }
+    
+    .senha-img img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    
+    
+    .senha-img {
+        position: absolute;
+        left: 0;
+        margin-left: 7rem;
+        margin-top: 5.28rem;
+    }
+    
+    .acesso-login input::placeholder{
+        color: #fff;
+        font-family: 'David Libre', serif;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .direita-conteudo button {
+        height: 40px;
+        width: 135px;
+        border: none;
+        background-color: #D67E3E;
+        color: #fff;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        font-family: 'Alegreya SC', serif;
+    }
+    
+    .direita-conteudo button:hover {
+        background-color: #9e5a2a;
+        color: #f2f2f2;
+        transition: all .5s ;
+    }
 }
