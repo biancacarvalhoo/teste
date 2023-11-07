@@ -42,9 +42,9 @@ function Home() {
                         <img src={logoMobile} alt="" />
                         <div className="flex">
                             <div className="buttonHome">
-                                <button>Acessar</button>
-                                <button>Cadastrar</button>
-                            </div>
+                            <Link to={"/acessar"}>Acessar</Link>
+                                <Link to={"/cadastrar"}>Cadastrar</Link>                            
+                             </div>
 
                             <div className="botao-menu">
                                 <button onClick={handleAbrirFecharMenu}>{abrirFechar == true ? <X size={32} color="#fff" /> : <List size={32} color="#fff"/> }</button>

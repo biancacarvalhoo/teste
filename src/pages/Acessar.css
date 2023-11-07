@@ -138,9 +138,6 @@
     .login-esquerda-botao {
         display: flex;
     }
-    .esquerda-botao {
-        display: none;
-    }
 
     .acessar-web {
         display: flex;
